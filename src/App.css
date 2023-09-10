@@ -1,0 +1,237 @@
+/* Hide default show password msedge button */
+input::-ms-reveal, input::-ms-clear {
+  display: none;
+}
+
+/* Theme */
+
+/* Light theme */
+.theme-light {
+  --color-primary: #FAF9F6;
+  --font-color: #685d48;
+  --color-highlight: #face9f51;
+  --color-highlight-dark: #fdcd9751;
+  --color-text-background: #ffe0bd;
+  --color-box-bg: rgba(255, 237, 217, 0.318);
+}
+
+/* Blue theme */
+.theme-blue {
+  --color-primary: #F0F8FF;
+  --font-color: #002244;
+  --color-highlight: #B2FFFF;
+  --color-highlight-dark: #8dffff;
+  --color-text-background: #E1EBEE;
+  --color-box-bg: #87cfeb98;
+}
+
+/* Green theme */
+.theme-green {
+  --color-primary: #b9ffe1;
+  --font-color: #004445;
+  --color-highlight: #4ad0c0;
+  --color-highlight-dark: #48cebf77;
+  --color-text-background: #a8e6cf;
+  --color-box-bg: #15a294;
+}
+
+/* Grey theme */
+.theme-grey {
+  --color-primary: #dbd8e3;
+  --font-color: #212121;
+  --color-highlight: #82779e87;
+  --color-highlight-dark: #5c547087;
+  --color-text-background: rgb(223, 223, 223);
+  --color-box-bg: #5c636e;
+}
+
+/* Yellow theme */
+.theme-yellow {
+  --color-primary: #e3c058;
+  --font-color: #4c330c;
+  --color-highlight: #f3c613;
+  --color-highlight-dark: #e5b802;
+  --color-text-background: #FFD8AA;
+  --color-box-bg: #ffd4a251;
+}
+
+/* Dark theme */
+.theme-dark {
+  --color-primary: #000000db;
+  --font-color: #b5b5b5;
+  --color-highlight: #555555;
+  --color-highlight-dark: rgb(146, 146, 146);
+  --color-text-background: #464646;
+  --color-box-bg: #323232;
+}
+
+.appContainer {
+  background-color: var(--color-primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  min-width: 600px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: var(--color-box-bg);
+  border-radius: 30px;
+  position: relative;
+}
+
+.headingLogin {
+  color: var(--font-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.textInput {
+  border:0;
+  background: var(--color-text-background);
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid var(--color-text-background);
+  padding: 14px 10px;
+  width: 400px;
+  outline: none;
+  color: var(--font-color);
+  border-radius: 24px;
+  transition: 0.25s;
+  margin-bottom: 15px;
+}
+
+.textInput:focus {
+  width: 450px;
+  border-color: var(--color-highlight);
+}
+
+.btnSubmit {
+  background: var(--color-highlight);
+  text-transform: uppercase;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--color-highlight);
+  padding: 14px 40px;
+  outline: none;
+  color: var(--font-color);
+  border-radius: 24px;
+  transition: 0.50s;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.btnSubmit:hover {
+  background: var(--color-highlight-dark);
+  color: var(--font-color);
+  border: 2px solid var(--color-highlight-dark);
+}
+
+.eye-icon.active {
+  display: none;
+}
+
+.passwordContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.iconContainer {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 90px;
+}
+
+.eye-icon {
+  height: 20px;
+  width: 20px;
+  opacity: 75%;
+}
+
+/* Dropdown menu */
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: fit-content;
+  width: 10em;
+  border-radius: 5%;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid var(--color-box-bg);
+  color: var(--font-color);
+  box-shadow: 1px 1px 2px rgb(181, 181, 181);
+}
+
+.theme-item {
+  cursor: pointer;
+}
+
+.theme-menu {
+  padding-top: 15px;
+}
+
+.color-box {
+  height: 15px;
+  width: 15px;
+  border-radius: 30%;
+}
+
+.color-light {
+  background-color: white;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-green {
+  background-color: greenyellow;
+}
+
+.color-grey {
+  background-color: grey;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-dark {
+  background-color: black;
+}
+
+.theme-item {
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+  gap: 10px;
+}
+
+.theme-icon.active {
+  display: none;
+}
+
+.theme-icon {
+  padding-left: 7px;
+}

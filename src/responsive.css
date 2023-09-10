@@ -1,0 +1,7 @@
+/* Make design responsive */
+@media (max-width: 500px) {
+  .form-container {
+    max-width: 500px;
+    padding: 20px;
+  }
+}
